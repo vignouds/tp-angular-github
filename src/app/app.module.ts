@@ -12,6 +12,7 @@ import {GithubApiService} from "./services/github-api.service";
 import {UserResolver} from './services/user-resolver';
 import {ErrorInterceptorService} from "./services/error-interceptor.service";
 import { RepositoriesComponent } from './repositories/repositories.component';
+import {RepositoryResolverService} from "./services/repository-resolver.service";
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { RepositoriesComponent } from './repositories/repositories.component';
   providers: [
     GithubApiService,
     UserResolver,
+    RepositoryResolverService,
     {provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptorService, multi:true}
   ],
   bootstrap: [AppComponent]
