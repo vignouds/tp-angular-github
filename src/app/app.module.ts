@@ -11,12 +11,14 @@ import {ROUTES} from "./app.routes";
 import {GithubApiService} from "./services/github-api.service";
 import {UserResolver} from './services/user-resolver';
 import {ErrorInterceptorService} from "./services/error-interceptor.service";
+import { RepositoriesComponent } from './repositories/repositories.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    DetailComponent
+    DetailComponent,
+    RepositoriesComponent
   ],
   imports: [
     BrowserModule,
