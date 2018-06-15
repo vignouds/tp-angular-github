@@ -4,11 +4,11 @@ import {Observable} from "rxjs";
 
 import User from "../model/User";
 import Repository from "../model/Repository";
+import {TOKEN} from "../token";
 
 const API_BASE_URL: string = 'https://api.github.com/';
 const API_USERS: string = 'users/';
 const API_REPOS: string = '/repos';
-const TOKEN: string = "?access_token=9f90154653f3c34d69b5ff0627df42f553fa9afd";
 
 @Injectable()
 export class GithubApiService {
