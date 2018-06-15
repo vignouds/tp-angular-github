@@ -1,3 +1,12 @@
-<p>
-  {{user.name}}
-</p>
+<div class="card">
+  <img class="card-img-top" src="{{user.avatar_url}}" alt="user avatar">
+  <div class="card-body">
+    <h5 class="card-title">{{user.login | titlecase}}</h5>
+    <p class="card-text">
+      {{user.bio}} <br/>
+      <strong>Type : </strong>{{user.type}} <br/>
+      <strong>Company : </strong>{{user.company}} <br/>
+      <strong>Location : </strong>{{user.location}}
+    </p>
+  </div>
+</div>

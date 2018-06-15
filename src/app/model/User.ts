@@ -1,7 +1,12 @@
 export default class User {
-    name:string;
+  login:string;
+  type:string;
+  compagny:string;
+  bio:string;
+  location:string;
+  avatar_url:string;
 
-    constructor(name: string){
-      this.name=name;
-    }
+  name:string;
+
+    constructor(){}
 }
